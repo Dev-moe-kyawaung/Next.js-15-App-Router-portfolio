@@ -1,0 +1,53 @@
+/* app/globals.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0.98 0.02 280;
+    --foreground: 0.15 0.04 280;
+    --card: 1.0 0.0 280;
+    --card-foreground: 0.15 0.04 280;
+    --muted: 0.95 0.01 280;
+    --muted-foreground: 0.45 0.02 280;
+    --border: 0.92 0.01 280;
+    --primary: 0.65 0.15 280;
+    --primary-foreground: 1.0 0.0 280;
+    --accent: 0.75 0.12 280;
+    --accent-foreground: 1.0 0.0 280;
+    --success: 0.7 0.15 150;
+    --success-foreground: 1.0 0.0 150;
+  }
+
+  .dark {
+    --background: 0.12 0.02 280;
+    --foreground: 0.95 0.01 280;
+    --card: 0.16 0.02 280;
+    --card-foreground: 0.95 0.01 280;
+    --muted: 0.2 0.02 280;
+    --muted-foreground: 0.65 0.02 280;
+    --border: 0.25 0.02 280;
+    --primary: 0.65 0.15 280;
+    --primary-foreground: 1.0 0.0 280;
+    --accent: 0.75 0.12 280;
+    --accent-foreground: 1.0 0.0 280;
+    --success: 0.7 0.15 150;
+    --success-foreground: 1.0 0.0 150;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground antialiased;
+  }
+}
+
+@layer utilities {
+  .scroll-smooth {
+    scroll-behavior: smooth;
+  }
+}
